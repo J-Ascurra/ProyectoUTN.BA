@@ -39,7 +39,7 @@ body {
 /* Estilos para el <Main> */
 
 .fondo {
-  background-image: url(/img/img-fondo.jpg);
+  background-image: url(../img/img-fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
