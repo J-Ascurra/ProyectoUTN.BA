@@ -1,0 +1,483 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Estilos para el <Nav> */
+
+.container-fluid {
+  background-color: #111;
+  margin: -10px;
+  padding: 15px;
+}
+
+.logo-lol-img {
+  height: 80px;
+  width: 140px;
+}
+
+.navbar-brand {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  color: #d4af37;
+}
+
+.nav-item {
+  letter-spacing: 1.5px;
+}
+
+.nav-item .nav-link:hover {
+  color: #d4af37;
+}
+
+/* Estilos para el <Main> */
+
+.fondo {
+  background-image: url(/img/img-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container-video {
+  display: grid;
+  place-items: center;
+  width: 33%;
+}
+
+.video-lol {
+  width: 450px;
+  height: 300px;
+  border: 0.5px solid white;
+  background-color: #111;
+}
+
+.form-container {
+  width: 33%;
+  margin: 0.5em 0;
+}
+
+.formulario {
+  background-color: #000000;
+  opacity: 0.9;
+  width: 50vw;
+  max-width: 550px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  color: #f5f6f7;
+}
+
+p {
+  position: relative;
+  bottom: -15px;
+  margin: 1em auto;
+  margin-top: 0px;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 18px;
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 1;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+}
+
+.formulario__input-error {
+	font-size: 18px;
+	margin-bottom: 0;
+	display: none;
+  color: red;
+
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__mensaje {
+	line-height: 20px;
+	background: #f4342e;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje-exito {
+	font-size: 20px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #191919;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+fieldset p {
+  text-align: left;
+  margin-left: 5px;
+}
+
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.formulario__btn {
+  display: block;
+  width: 60%;
+  cursor: pointer;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  color: #fff;
+  min-width: 70px;
+  height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	border: none;
+	border-radius: 7px;
+	transition: .1s ease all;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+
+.formulario__grupo-correcto .formulario__input {
+	border: 2px solid #1ed12d;
+}
+
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 2px solid #bb2929;
+}
+
+/* ----- -----   ----- ----- */
+
+
+.grid-container {
+  width: 33%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+
+.div1 , .div2 {
+  display: grid;
+  background-color: #111;
+  width: 300px;
+  height: 270px;
+}
+
+.img1 , .img2 {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #111;
+}
+
+
+
+/* Estilos <section> */
+
+.section-premios {
+  width: 100% ;
+  margin: 0 ;
+  padding-top: 1px;
+  background-color: #111;
+  color: #d4af37;
+  text-align: center;
+  border-top: 1px solid #4b4f3b ;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-premios h1 {
+  margin: 15px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.cont-premios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width:100%;
+  font-size: 20px;
+}
+
+.box {
+  width: 180px;
+}
+
+.img-premios {
+  width: 120px;
+  height: 100px;
+  border: 1px solid #4b4f3b ;
+}
+
+/* Estilos <footer> */
+
+.footer-container {
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #4b4f3b;
+}
+
+footer p {
+  color: #f5f6f7;
+  font-size: 20px;
+}
+
+.iframe {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em;
+  border: 1px solid red;
+}
+
+.riot-logo-img {
+  margin: 1em;
+  width: 15%;
+  height: 15%;
+}
+
+/* Media queries para hacerlo responsive */
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .fondo {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-video {
+    width: 100%;
+  }
+
+  .video-lol {
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+  }
+  .form-container {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(1, 0.5fr);
+    grid-gap: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .div1 {
+    height: 250px;
+  }
+
+  .cont-premios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width:100%;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .riot-logo-img {
+    margin: 2em;
+    width: 50%;
+    height: 50%;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .iframe {
+    max-width: 95%;
+    height: auto;
+    margin: 0.5em;
+    border: 1px solid red;
+  }
+
+}
+
+/* Estilos para pantallas medianas */
+
+@media screen and (min-width: 601px) and (max-width: 1290px) {
+  .fondo {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-video {
+    width: 100%;
+  }
+
+  .video-lol {
+    margin-top: 10px;
+    width: 450px;
+    height: 250px;
+    justify-content: center;
+  }
+  .form-container {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 0.3fr);
+    grid-template-rows: repeat(1, 0.5fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .div1 , .div2  {
+    width: 400px;
+    height: 300px;
+  }
+
+  .img1 , .img2 {
+    width: 400px;
+    height: 250px;
+  }
+
+  .div1 audio , div2 audio {
+    width: 400px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .riot-logo-img {
+    margin: 2em;
+    width: 30%;
+    height: 30%;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+}
+
+/* Estilos para pantallas grandes */
+
+@media screen and (min-width: 1290px) and (max-width: 1440px) {
+  .fondo {
+    display: flex;
+  }
+  .container-video {
+    width: 100%;
+  }
+
+  .video-lol {
+    width: 350px;
+    height: 200px;
+    justify-content: center;
+  }
+  .form-container {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 0.3fr);
+    grid-template-rows: repeat(1, 0.5fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .div1 , .div2{
+    width: 350px;
+    height: 250px;
+  }
+
+  .img1 , .img2 {
+    width: 350px;
+    height: 250px;
+  }
+
+  .div1 audio , .div2 audio {
+    width: 350px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .riot-logo-img {
+    margin: 2em;
+    width: 25%;
+    height: 25%;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+}
+

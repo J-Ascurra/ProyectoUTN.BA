@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid justify-content-center align-items-center">
+      <a class="navbar-brand" href="https://www.leagueoflegends.com/es-mx/">
+        <img src="https://signup.leagueoflegends.com/es-mx/assets/lol-logo.png" class="logo-lol-img" alt="logo-lol" />
+      </a>
+      <a class="navbar-brand" href="#">Campeonato de <span>LOL</span> 2023</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#premios">Premios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main id="inicio" class="fondo">
+
+    <!-- video -->
+
+    <div class="container-video">
+      <video class="video-lol" src="/media/video-de-LOL.webm" autoplay="true" controls muted="true" loop="true"></video>
+    </div>
+
+    <!-- formulario -->
+
+    <div class="form-container">
+      <form id="formulario" class="formulario" action="">
+        <p>Complete este formulario con la información requerida</p>
+
+        <fieldset>
+          <!-- Nombre -->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre">Ingrese su Nombre:
+
+              <input id="nombre" class="formulario__input" name="nombre" type="text" /></label>
+            <p class="formulario__input-error">
+              El Nombre tiene que ser de 4 a 16 dígitos y solo puede
+              contener letras.
+            </p>
+          </div>
+
+          <!-- Apellido -->
+          <div class="formulario__grupo" id="grupo__apellido">
+            <label for="apellido">Ingrese su Apellido:
+              <input id="apellido" class="formulario__input" name="apellido" type="text" /></label>
+            <p class="formulario__input-error">
+              El Apellido tiene que ser de 4 a 16 dígitos y solo puede contener
+              letras.
+            </p>
+          </div>
+
+          <!-- Edad -->
+          <div class="formulario__grupo" id="grupo__edad">
+            <label for="edad">Ingrese su edad (Años):
+              <input id="edad" class="formulario__input" type="number" name="edad" min="18" /></label>
+            <p class="formulario__input-error">La Edad minima es de 18 años y maxima 80 años</p>
+          </div>
+
+          <!-- Usuario-invocador -->
+          <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario">Ingrese su Usuario de Invocador:
+              <input id="usuario" class="formulario__input" name="usuario" type="text" /></label>
+            <p class="formulario__input-error">
+              El Usuario-invocador tiene que ser de 4 a 16 dígitos y solo puede
+              contener numeros, letras y guion bajo.
+            </p>
+          </div>
+
+          <!-- Region -->
+          <div class="formulario__grupo" id="grupo__region">
+            <label for="region">Seleccione su Región:
+              <select id="region" name="region">
+                <option value="">(Seleccione una opción)</option>
+                <option value="1">Latinoamérica Sur</option>
+                <option value="2">Latinoamérica Norte</option>
+                <option value="3">Brasil</option>
+              </select>
+              <p class="formulario__input-error">
+                Debe seleccionar una categoria.
+              </p>
+            </label>
+          </div>
+
+          <!-- Correo Electrónico -->
+          <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo">Ingrese su Correo Electrónico:
+              <input id="correo" class="formulario__input" name="correo" type="email"
+                placeholder="correo@correo.com" /></label>
+            <p class="formulario__input-error">
+              El correo solo puede contener letras, numeros, puntos, guiones y
+              guion bajo.
+            </p>
+          </div>
+
+          <!-- password -->
+          <div class="formulario__grupo" id="grupo__password">
+            <label for="password">Crea una nueva Password:
+              <input id="password" class="formulario__input" name="password" type="password" /></label>
+            <p class="formulario__input-error">
+              La contraseña tiene que ser de 4 a 12 dígitos.
+            </p>
+          </div>
+
+        </fieldset>
+        <p>Elige el modo de juego en el que participar :</p>
+
+        <!-- SOLO/DUO -->
+        <fieldset>
+          <label for="solo/duo"><input id="solo/duo" type="radio" name="radio" class="inline" />
+            Solo / Duo.</label>
+          <label for="5vs5"><input id="5vs5" type="radio" name="radio" class="inline" />
+            Equipo 5 vs 5.
+          </label>
+
+          <!-- Referencia -->
+          <div class="formulario__grupo" id="grupo__referencia">
+            <label for="referencia">¿Cómo te enteraste de nosotros?
+              <select id="referencia" name="referencia">
+                <option value="">(Seleccione una opción)</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">Twitter</option>
+                <option value="4">YouTube</option>
+                <option value="5">Otro</option>
+              </select>
+              <p class="formulario__input-error">
+                Debe seleccionar una categoria.
+              </p>
+            </label>
+          </div>
+
+          <!-- Bio -->
+          <label for="bio">¿Por qué quieres participar?
+            <textarea id="bio" class="formulario__input" name="bio" rows="3" cols="30"
+              placeholder="para probarme de una forma más competitiva..."></textarea>
+          </label>
+
+          <!-- Terminos y Condiciones -->
+          <label for="terminos">
+            <input id="terminos" type="checkbox" name="terminos" class="inline" />
+            Acepto los
+            <a href="https://www.riotgames.com/es-419/terms-of-service-LATAM">términos y condiciones</a>
+          </label>
+        </fieldset>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p>
+            <b>Error:</b> Por favor rellena el formulario correctamente.
+          </p>
+        </div>
+
+        <button class="formulario__btn" type="submit">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+          Formulario enviado exitosamente!
+        </p>
+      </form>
+    </div>
+
+    <!-- Imagenes y audios -->
+
+    <div class="grid-container">
+      <div class="div1">
+        <img class="img1" src="/img/viego-img.webp" /><audio src="/media/audio-viego.mp3" controls></audio>
+      </div>
+      <div class="div2">
+        <img class="img2" src="/img/volibear-img.jpg" /><audio src="/media/audio-voli.mp3" controls></audio>
+      </div>
+    </div>
+  </main>
+
+  <!-- Premios -->
+  <section id="premios" class="section-premios">
+    <div>
+      <h1>¡ Recibirás Increibles Premios !</h1>
+    </div>
+    <div class="cont-premios">
+      <div class="box">
+        <img class="img-premios" src="/img/RiotPointImg.png" />
+        <p>Puedes obtener hasta 1000 RP</p>
+      </div>
+      <div class="box">
+        <img class="img-premios" src="img/CapsulaImg.png" />
+        <p>Gana cápsulas por victorias</p>
+      </div>
+      <div class="box">
+        <img class="img-premios" src="/img/Orbeimg.png" />
+        <p>Obtén orbe por partipar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="riot-logo-img">
+      <a href="https://www.riotgames.com" target="_blank"><img
+          src="https://signup.leagueoflegends.com/es-mx/assets/riotgames-logo-new.svg" /></a>
+    </div>
+    <div id="contacto">
+      <p>Esta pagina fue creada por Jonathan Ascurra.</p>
+      <p>Contacto : <a class="email">Jonathanascurra@hotmail.com</a></p>
+      <p>@ 2023 Riot Games , inc. Todos los derechos reservados.</p>
+    </div>
+    <div class="iframe-container">
+      <iframe class="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d52545.97950040364!2d-58.42473534467837!3d-34.60103292561036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n%2C%20Cerrito%20628%2C%20C1010AAN%20CABA!3m2!1d-34.6011105!2d-58.3835359!5e0!3m2!1ses!2sar!4v1684545837859!5m2!1ses!2sar"
+        allowfullscreen=""></iframe>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
